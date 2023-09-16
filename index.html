@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Advice generator app</title>
+</head>
+<body class="bg-[#1F2632] min-h-screen grid place-items-center" style="font-family: 'Manrope', sans-serif;">
+
+  <main>
+    <section class="relative bg-[#323A49] w-80 h-80 md:w-[30rem] flex flex-col items-center rounded-lg p-6">
+      <p class="text-[#52FFA8] uppercase text-[.5rem] md:text-sm tracking-[.2rem]">Advice # <span id="counter"> </span> </p>
+      <h1 id="advice" class="text-[#CEE3E9] h-52 text-2xl flex items-center text-center md: text-3xl"></h1>
+      <svg class="block md:hidden" width="295" height="16" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+          <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z"/>
+          <g transform="translate(138)" fill="#CEE3E9">
+            <rect width="6" height="16" rx="3"/>
+            <rect x="14" width="6" height="16" rx="3"/>
+          </g>
+        </g>
+      </svg>
+      <svg class="hidden md:block" width="444" height="16" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+          <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z"/>
+          <g transform="translate(212)" fill="#CEE3E9">
+            <rect width="6" height="16" rx="3"/>
+            <rect x="14" width="6" height="16" rx="3"/>
+          </g>
+        </g>
+      </svg>
+      <button onclick="generateAdvice()" class="w-16 h-16 absolute bottom-[-10%] rounded-full bg-[#52FFA8] grid place-items-center hover:shadow-[0px_0px_12px_3px] hover:shadow-[#52FFA8]">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/>
+        </svg>
+      </button>
+    </section>
+  </main>
+  
+  <footer class="text-xs text-center text-slate-400">
+    <p>Challenge by <a class="hover:text-[#52FFA8]" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="hover:text-[#52FFA8]" href="https://github.com/VickyAzola/AdviceGeneratorApp" target="_blank">Victoria Azola</a>.</p>
+  </footer>
+</body>
+<script src="index.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</html>
