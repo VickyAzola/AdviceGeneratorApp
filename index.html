@@ -13,10 +13,13 @@
 <body class="bg-[#1F2632] min-h-screen grid place-items-center" style="font-family: 'Manrope', sans-serif;">
 
   <main>
-    <section class="relative bg-[#323A49] w-80 h-80 md:w-[30rem] flex flex-col items-center rounded-lg p-6">
+    <section class="relative bg-[#323A49] w-[21rem] h-[19rem] md:w-[30rem] flex flex-col items-center rounded-lg p-6">
       <p class="text-[#52FFA8] uppercase text-[.5rem] md:text-sm tracking-[.2rem]">Advice # <span id="counter"> </span> </p>
-      <h1 id="advice" aria-label="Advice" class="text-[#CEE3E9] h-52 text-2xl flex items-center text-center md: text-3xl"></h1>
-      <svg class="block md:hidden" width="295" height="16" xmlns="http://www.w3.org/2000/svg">
+      <div class="grid place-items-center h-full px-2 pb-10">
+        <h1 id="advice" aria-label="Advice" class="text-[#CEE3E9] font-bold text-2xl text-center md:text-3xl">"It is easy to sit up and take notice, what is difficult is getting up and taking action"</h1>
+      </div>
+      
+      <svg class="block md:hidden absolute bottom-[18%]" width="295" height="16" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fill-rule="evenodd">
           <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z"/>
           <g transform="translate(138)" fill="#CEE3E9">
@@ -25,7 +28,8 @@
           </g>
         </g>
       </svg>
-      <svg class="hidden md:block" width="444" height="16" xmlns="http://www.w3.org/2000/svg">
+
+      <svg class="hidden md:block absolute bottom-[18%]" width="444" height="16" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fill-rule="evenodd">
           <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z"/>
           <g transform="translate(212)" fill="#CEE3E9">
@@ -34,6 +38,7 @@
           </g>
         </g>
       </svg>
+
       <button onclick="generateAdvice()" aria-label="Press to generate an advice" class="w-16 h-16 absolute bottom-[-10%] rounded-full bg-[#52FFA8] grid place-items-center hover:shadow-[0px_0px_12px_3px] hover:shadow-[#52FFA8]">
         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/>
@@ -43,8 +48,8 @@
   </main>
   
   <footer class="text-xs text-center text-slate-400">
-    <p>Challenge by <a class="hover:text-[#52FFA8]" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a class="hover:text-[#52FFA8]" href="https://github.com/VickyAzola/AdviceGeneratorApp" target="_blank">Victoria Azola</a>.</p>
+    <p>Challenge by <a class="hover:text-[#52FFA8] font-bold" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="hover:text-[#52FFA8] font-bold" href="https://github.com/VickyAzola/AdviceGeneratorApp" target="_blank">Victoria Azola</a>.</p>
   </footer>
 </body>
 <script src="index.js"></script>
